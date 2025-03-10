@@ -57,44 +57,4 @@ function validateEmail(email) {
     let re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
 }
-// Fonction pour valider les order
-document.getElementById("orderForm").addEventListener("submit", function(event) {
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let address = document.getElementById("address").value.trim();
-    let telephon = document.getElementById("telephon").value.trim();
-    let quantity = document.getElementById("quantity").value;
-    let rib = document.getElementById("rib").value.trim();
-    let date = document.getElementById("date").value;
 
-    // Regular expressions for validation
-    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    let phonePattern = /^[0-9]{10}$/;
-    let ribPattern = /^[0-9]{16,}$/; // At least 16 digits
-
-    if (name === "" || email === "" || address === "" || telephon === "" || quantity === "" || rib === "" || date === "") {
-      alert("Veuillez remplir tous les champs.");
-      event.preventDefault();
-      return;
-    }
-
-    if (!emailPattern.test(email)) {
-      alert("Veuillez entrer une adresse e-mail valide.");
-      event.preventDefault();
-      return;
-    }
-
-    if (!phonePattern.test(telephon)) {
-      alert("Le numéro de téléphone doit contenir exactement 10 chiffres.");
-      event.preventDefault();
-      return;
-    }
-
-    if (!ribPattern.test(rib)) {
-      alert("Le RIB doit contenir au moins 16 chiffres.");
-      event.preventDefault();
-      return;
-    }
-
-    alert("Formulaire soumis avec succès !");
-  });

@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
         <div>
             <nav class="navbar navbar-dark bg-dark fixed-top">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="home.html" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><h2>BOOKS-MINE</h2></a>
+                  <a class="navbar-brand" href="home.html" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><h2 class="animate__animated animate__pulse animate__fadeInRight animate__infinite animate__slower	3s">BOOKS-MINE</h2></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -66,11 +67,11 @@
         </div>
         <div class="col">
           <br>
-          <h2 class="text-center display-2 text-bg-dark"> Novels</h2>
+          <h2 class="text-center display-2 text-bg-dark animate__animated animate__pulse animate__infinite animate__slower	3s""> Novels</h2>
           <br>
           <h3 class="text-center fst-italic">This page is dedicated to novels,<br> Here you will find the best novels for to have fun and live many wonderful events. </h3>
           <br>
-          <h3 class="text-center text-bg-dark"> Type novels :</h3>
+          <h3 class="text-center text-bg-dark animate__animated animate__pulse animate__infinite animate__slower	3s""> Type novels :</h3>
           <br>
           <ol style="list-style: none;">
             <li><h4>PHILOSOPHICAL NOVELS</h4></li><br>
@@ -82,7 +83,7 @@
       <div>
         <div>
           <br>
-          <h3 class="text-center w-25" style="font-family: Arial, Helvetica, sans-serif; border : solid black ; background-color: black;">PHILOSOPHICAL NOVELS</h3>
+          <h3 class="text-center w-25 animate__animated animate__pulse animate__infinite animate__slower	3s" style="font-family: Arial, Helvetica, sans-serif; border : solid black ; background-color: black;">PHILOSOPHICAL NOVELS</h3>
           <br>
         <div class="d-flex justify-content-center">
           <div class="row" >
@@ -135,7 +136,7 @@
         </div>
         <div>
           <br>
-          <h3 class="text-center w-25" style="font-family: Arial, Helvetica, sans-serif; border: solid black; background-color: black;">FANTASY NOVELS</h3>
+          <h3 class="text-center w-25 animate__animated animate__pulse animate__infinite animate__slower	3s" style="font-family: Arial, Helvetica, sans-serif; border: solid black; background-color: black;">FANTASY NOVELS</h3>
           <br>
         <div class="d-flex justify-content-center">
           <div class="row">
@@ -188,7 +189,7 @@
         </div>
         <br>
 <div>
-  <h3 class="text-center w-25" style="font-family: Arial, Helvetica, sans-serif; border: solid black; background-color: black;">TRUS STORIES</h3>
+  <h3 class="text-center w-25 animate__animated animate__pulse animate__infinite animate__slower	3s" style="font-family: Arial, Helvetica, sans-serif; border: solid black; background-color: black;">TRUS STORIES</h3>
   <br>
  <div class="d-flex justify-content-center">
   <div class="row">
@@ -243,51 +244,51 @@
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header" style="background-color:#bcbd8b; color:#122b1d;">
+            <div class="modal-header" style="background-color:#3d9444; color:#122b1d;">
               <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">FILL YOUR INFORMATION</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" style="background-color: #122b1d;">
               <div class="form-container">
                 <form action="#" method="POST">
-                  <label for="name">Nom Complet :</label>
+                  <label for="name">Nom Complet :</label><br>
                   <input type="text" id="name" name="name" required placeholder="Votre nom complet">
                   <br><br>
       
-                  <label for="email">Adresse E-mail :</label>
+                  <label for="email">Adresse E-mail :</label><br>
                   <input type="email" id="email" name="email" required placeholder="Votre e-mail">
                   <br><br>
       
-                  <label for="address">Adresse de Livraison :</label>
+                  <label for="address">Adresse de Livraison :</label><br>
                   <input type="text" id="address" name="address" required placeholder="Entrez votre adresse">
                   <br><br>
       
-                  <label for="telephon">Numéro de téléphone :</label>
+                  <label for="telephon">Numéro de téléphone :</label><br>
                   <input type="number" id="telephon" name="telephon" pattern="[0-9]{10}" required placeholder="Ex: 0612345678">
                   <br><br>
       
-                  <label for="quantity">Quantité :</label>
+                  <label for="quantity">Quantité :</label><br>
                   <input type="number" id="quantity" name="quantity" value="1" min="1" required>
                   <br><br>
       
-                  <label for="payment">Mode de Paiement :</label>
+                  <label for="payment">Mode de Paiement :</label><br>
                   <select id="payment" name="payment" required>
                     <option value="credit_card">Carte de Crédit</option>
                     <option value="bank_transfer">Virement Bancaire</option>
                   </select>
                   <br><br>
       
-                  <label for="rib">R I B :</label>
+                  <label for="rib">R I B :</label><br>
                   <input type="text" id="rib" name="rib" required placeholder="Ex: 123456789012345678">
                   <br><br>
       
-                  <label for="date">Card expiry date :</label>
+                  <label for="date">Card expiry date :</label><br>
                   <input type="date" id="date" name="date" required>
                   <br><br>
       
-                  <div class="modal-footer" style="background-color:#bcbd8b;">
+                  <div class="modal-footer" style="background-color:#3d9444;">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #122b1d; color: white;">Close</button>
-                    <button type="submit" class="btn btn-primary" style="background-color: #122b1d; color: white;">Buy Now</button>
+                    <button type="submit" class="btn" style="background-color: #122b1d; color: white;">Buy Now</button>
                   </div>
                 </form>
               </div>
